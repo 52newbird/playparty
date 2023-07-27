@@ -5,62 +5,31 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        msg: "这是一次小测试",
+        isshow: true,
+        obj: {
+            name: "小然子",
+            age: "18"
+        },
+        user: [
+            { id: 1, name: "小艾看到", age: 18 },
+            { id: 2, name: "小艾到", age: 18 },
+            { id: 3, name: "小看到", age: 18 },
+            { id: 4, name: "艾看到", age: 18 },
+        ],
+        students: [
+            { id: 0, name: "xiaoran", fs: 98 },
+            { id: 1, name: "xiaoyuan", fs: 60 },
+            { id: 2, name: "aqi", fs: 50 }
+        ]
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad(options) {
-
+    click(event) {
+        console.log("事件出发了",event);
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
-
+    handlefocus() {
+        console.log("输入框获取焦点");
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
+    getFs(e){
+        console.log(e.target.dataset.fs);
     }
 })

@@ -1,2 +1,31 @@
 <!--pages/test/test.wxml-->
-<text>我是测试页面</text>
+<view>
+    <text>{{msg}}</text>
+    <view>{{isshow?"yes":"no"}}</view>
+    <view>{{obj.name}}--{{obj.age}}</view>
+    <!-- 数组遍历 -->
+    <view wx:for="{{user}}" wx:key="index">{{index}}-{{item.name}}</view>
+    <!-- 对象遍历 -->
+    <view wx:for="{{obj}}" wx:key="index">{{item}}</view>
+    <!-- 遍历对象名可以自定义 通过wx:for-item  wx:for=index -->
+
+    <!-- if判断 条件语句-->
+    <view class="if">
+        <view class="one" wx:if="isshow">one</view>
+        <view class="two" wx:else>two</view>
+    </view>
+
+    <!-- 练习 -->
+    <view class="tst">
+        <view class="info" wx:for="{{students}}" wx:key="name">
+        <!-- data- 获取点击 数据获取 -->
+            <view data-fs="{{item.fs}}" bindtap="getFs" class="nm">{{item.name}}</view>
+            <view wx:if="{{item.fs>90}}">优秀</view>
+            <view wx:elif="{{item.fs>50}}">良好</view>
+            <view wx:else>不及格</view>
+        </view>
+    </view>
+    <!-- 点击事件  :可以去掉 -->
+    <button bind:tap="click" type="primary">点击事件</button>
+    <input bindfocus="handlefocus" style="border:1px solid red" type="text"/>
+</view>
