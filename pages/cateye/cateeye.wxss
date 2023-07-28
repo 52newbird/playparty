@@ -1,0 +1,22 @@
+/* pages/cateye/cateeye.wxss */
+.head{
+    width: 300rpx;
+    height: 100rpx;
+}
+.head text{
+    padding: 20rpx;
+}
+.actives{
+    color: red;
+    font-size: 25px;
+    border-bottom: 2px solid green;
+}
+.item-one{
+    width: 100%;
+    height: 100%;
+}
+.item-one image{
+    width: 300rpx;
+    height: 300rpx;
+    background-size: cover;
+}

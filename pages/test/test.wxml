@@ -25,7 +25,17 @@
             <view wx:else>不及格</view>
         </view>
     </view>
+    <!-- 更改数据推动视图更新 -->
+    <view>
+        <button bindtap="changeview" type="default">点击更新视图</button>
+    </view>
     <!-- 点击事件  :可以去掉 -->
     <button bind:tap="click" type="primary">点击事件</button>
     <input bindfocus="handlefocus" style="border:1px solid red" type="text"/>
+
+    <!-- 事件冒泡 -->
+    <view class="father" bind:tap="test1">
+    我是父元素
+        <view class="son"  catch:tap="test2">我是子元素</view>
+    </view>
 </view>

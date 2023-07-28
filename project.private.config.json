@@ -1,7 +1,8 @@
 {
     "projectname": "wechat",
     "setting": {
-        "compileHotReLoad": true
+        "compileHotReLoad": true,
+        "urlCheck": false
     },
     "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
     "condition": {
@@ -10,6 +11,20 @@
                 {
                     "name": "测试页",
                     "pathName": "pages/test/test",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "卡券",
+                    "pathName": "pages/card/card",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "catmovie",
+                    "pathName": "pages/cateye/cateeye",
                     "query": "",
                     "launchMode": "default",
                     "scene": null

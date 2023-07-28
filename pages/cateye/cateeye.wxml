@@ -1,0 +1,22 @@
+<!--pages/cateye/cateeye.wxml-->
+<!-- 功能一 -->
+<view class="head">
+    <text data-tab="{{item.id}}" bind:tap="changetap" class="{{active===item.id?'actives':''}}" wx:for="{{type}}" wx:key="id">{{item.name}}</text>
+</view>
+<view class="item-one" wx:if="{{active === 1}}">
+    <view wx:for="{{movieList}}" wx:key="id">
+        <image src="{{item.img}}"  />
+    </view>
+</view>
+<view class="item-two" wx:else>
+    <view>no1</view>
+    <view>no2</view>
+    <view>no3</view>
+    <view>no4</view>
+    <view>no5</view>
+    <view>no6</view>
+    <view>no7</view>
+    <view>no8</view>
+    <view>no9</view>
+    <view>no10</view>
+</view>

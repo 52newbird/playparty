@@ -1,6 +1,6 @@
 // app.js
 App({
-  onLaunch() {
+  onLaunch(res) {
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -12,6 +12,19 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+    console.log(res);
+  },
+  onShow(res){
+      console.log("111",res);
+  },
+  onHide(){
+      console.log("222");
+  },
+  onError(){
+      console.log("出现错误了");
+  },
+  onPageNotFound(){
+      console.log("页面消失了");
   },
   globalData: {
     userInfo: null
