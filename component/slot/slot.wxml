@@ -1,0 +1,6 @@
+<!--component/slot/slot.wxml-->
+<view>
+    <view>这里是组件的内部代码</view>
+    <slot name="slt1"></slot>
+    <slot name="slt2"></slot>
+</view>

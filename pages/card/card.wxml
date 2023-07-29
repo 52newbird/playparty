@@ -5,5 +5,9 @@
     <navigator open-type="redirect" url="/pages/test/test">无法返回跳转</navigator>
     <!-- 如果想要跳转到tabbar页面 open-type需要设置switchtab -->
     <navigator open-type="switchTab" url="/pages/home/home">跳转到主页</navigator>
-    <change max="15"></change>
+    <slots>
+        <view slot="slt1">这是通过插槽1写的内容</view>
+        <view slot="slt2">这是通过插槽2写的内容</view>
+    </slots>
+    <change max="15" style="position: relative; left: 0rpx; top: 0rpx"></change>
 </view>

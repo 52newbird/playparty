@@ -3,6 +3,10 @@ Component({
     /**
      * 组件的属性列表
      */
+    //options
+    options:{
+        styleIsolation:"apply-shared"
+    },
     // 小程序监听器
     observers: {
         "numb,count": function (num, count) {
@@ -95,9 +99,13 @@ Component({
     lifetimes: {
         created() {
             console.log("created执行");
+            console.log("组件周期");
         },
         attached() {
             console.log("attached执行");
+        },
+        detached(){
+            console.log("detached执行");
         }
     },
     pageLifetimes: {
