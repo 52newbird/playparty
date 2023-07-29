@@ -1,0 +1,15 @@
+<!--component/change/change.wxml-->
+<view style="background-color: rgb({{defColor}});" class="colorBox">颜色值：{{defColor}}</view>
+<button size="mini" type="default" bindtap="changeR">R</button>
+<button size="mini" type="primary" bindtap="changeG">G</button>
+<button size="mini" type="warn" bindtap="changeB">B</button>
+<view>空格1</view>
+<view>空格2</view>
+<view>空格3</view>
+<view>空格4</view>
+<view>空格5</view>
+<view>{{count}}+{{numb}} = {{sum}}</view>
+<view>{{count}}</view>
+<view>{{numb}}</view>
+<button type="primary" bind:tap="addCount"> 点击count加一</button>
+<button type="default" bind:tap="addCount2"> 点击numb加一</button>

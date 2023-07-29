@@ -11,7 +11,7 @@
 
     <!-- if判断 条件语句-->
     <view class="if">
-        <view class="one" wx:if="isshow">one</view>
+        <view class="one" wx:if="{{isshow}}">one</view>
         <view class="two" wx:else>two</view>
     </view>
 
@@ -19,11 +19,17 @@
     <view class="tst">
         <view class="info" wx:for="{{students}}" wx:key="name">
         <!-- data- 获取点击 数据获取 -->
-            <view data-fs="{{item.fs}}" bindtap="getFs" class="nm">{{item.name}}</view>
+            <view data-fs="{{item.fs}}" bindtap="getFs" class="nm">{{tobig.toUpper(item.name)}}</view>
             <view wx:if="{{item.fs>90}}">优秀</view>
             <view wx:elif="{{item.fs>50}}">良好</view>
             <view wx:else>不及格</view>
         </view>
+        <!-- 自定义wxs 差不多是wx过滤器  还可以定义到外部文件 .wxs 具体用法 标签 src属性引入 自定义名称-->
+        <wxs module="tobig">
+            module.exports.toUpper = function(str){
+                return str.toUpperCase()
+            }
+        </wxs>
     </view>
     <!-- 更改数据推动视图更新 -->
     <view>
@@ -38,4 +44,5 @@
     我是父元素
         <view class="son"  catch:tap="test2">我是子元素</view>
     </view>
+    <view hidden="{{isshow}}">我是hidden元素</view>
 </view>
