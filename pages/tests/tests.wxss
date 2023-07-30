@@ -1,1 +1,7 @@
 /* pages/tests/tests.wxss */
+html{
+    --main-color:#c00000
+}
+.one{
+    color: var(--main-color);
+}

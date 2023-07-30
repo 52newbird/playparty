@@ -8,3 +8,7 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+page{
+    --button-danger-background-color:#c00000;
+    --button-danger-border-color:#D60000;
+}

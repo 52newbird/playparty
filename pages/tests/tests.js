@@ -5,22 +5,30 @@ Page({
      * 页面的初始数据
      */
     data: {
-        count:0
+        count: 0
     },
     //监听子组件传来的值 并使用
-    getSonCount(e){
+    getSonCount(e) {
         console.log(e);
         this.setData({
-            count:e.detail.count
+            count: e.detail.count
         })
     },
     //通过选择器获取子组件实例对象
-    getInfo(){
+    getInfo() {
         const Info = this.selectComponent("#sonInfo")
         console.log(Info);
         this.setData({
-            count:Info.properties.count + 1
+            count: Info.properties.count + 1
         })
+    },
+    //获取数据转为promise
+    async getHtp() {
+        const { data: res } = await wx.p.request({
+            url: 'http://5990367be1e4470011c46fa8.mockapi.io/meng/user',
+            method: "GET"
+        })
+        console.log(res);
     },
     /**
      * 生命周期函数--监听页面加载

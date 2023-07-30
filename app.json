@@ -38,9 +38,11 @@
             }
         ]
     },
-    "style": "v2",
     "sitemapLocation": "sitemap.json",
     "usingComponents": {
-        "slots": "./component/slot/slot"
+        "slots": "./component/slot/slot",
+        "van-button": "@vant/weapp/button/index",
+        "van-row": "@vant/weapp/row/index",
+        "van-col": "@vant/weapp/col/index"
     }
 }

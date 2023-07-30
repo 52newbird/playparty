@@ -3,3 +3,6 @@
 <view></view>
 <fatoch count="{{count}}" bind:count="getSonCount" id="sonInfo"></fatoch>
 <button type="primary" bindtap="getInfo">点击获取子组件实例对象</button>
+<view></view>
+<van-button type="primary" bindtap="getHtp">按钮</van-button>
+<van-button type="danger">按钮</van-button>

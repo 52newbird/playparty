@@ -36,7 +36,8 @@
         },
         "disableUseStrict": false,
         "useCompilerPlugins": false,
-        "ignoreUploadUnusedFiles": false
+        "ignoreUploadUnusedFiles": false,
+        "condition": false
     },
     "compileType": "miniprogram",
     "condition": {},
