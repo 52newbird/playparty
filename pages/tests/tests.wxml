@@ -1,0 +1,5 @@
+<!--pages/tests/tests.wxml-->
+<text>我是父元素 count:{{count}}</text>
+<view></view>
+<fatoch count="{{count}}" bind:count="getSonCount" id="sonInfo"></fatoch>
+<button type="primary" bindtap="getInfo">点击获取子组件实例对象</button>

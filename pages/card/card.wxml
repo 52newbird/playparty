@@ -9,5 +9,7 @@
         <view slot="slt1">这是通过插槽1写的内容</view>
         <view slot="slt2">这是通过插槽2写的内容</view>
     </slots>
+    <view>这是子组件</view>
     <change max="15" style="position: relative; left: 0rpx; top: 0rpx"></change>
+    <view>这是子组件/</view>
 </view>

@@ -28,6 +28,13 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "父传子",
+                    "pathName": "pages/tests/tests",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

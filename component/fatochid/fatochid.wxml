@@ -1,0 +1,4 @@
+<!--component/fatochid/fatochid.wxml-->
+<text>我是子组件count:{{count}}</text>
+<view>我是behavior中的内容:{{name}}</view>
+<button bindtap="addCount" type="primary">点击按钮加一</button>

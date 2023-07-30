@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "fatoch":"../../component/fatochid/fatochid"
+    }
+}

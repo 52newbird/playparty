@@ -66,7 +66,7 @@ Page({
     onReady(){
         wx.setNavigationBarTitle({
           title: this.data.query.name,
-          
+
         })
     },
     data: {

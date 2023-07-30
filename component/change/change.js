@@ -5,6 +5,7 @@ Component({
      */
     //options
     options:{
+        //app。json是否可以影响到组件
         styleIsolation:"apply-shared"
     },
     // 小程序监听器
@@ -119,5 +120,5 @@ Component({
         resize() {
             console.log("resize");
         }
-    }
+    },
 })

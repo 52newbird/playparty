@@ -4,7 +4,8 @@
         "pages/card/card",
         "pages/my/my",
         "pages/test/test",
-        "pages/cateye/cateeye"
+        "pages/cateye/cateeye",
+        "pages/tests/tests"
     ],
     "window": {
         "navigationBarBackgroundColor": "#fff000",
@@ -40,6 +41,6 @@
     "style": "v2",
     "sitemapLocation": "sitemap.json",
     "usingComponents": {
-        "slots":"./component/slot/slot"
+        "slots": "./component/slot/slot"
     }
 }
