@@ -1,0 +1,7 @@
+<!--pages/mbox/mbox.wxml-->
+<view>{{numA}}+{{numB}}={{sum}}</view>
+<van-button bindtap="changeCount" type="primary" data-step="{{1}}">numA+1</van-button>
+<view></view>
+<van-button bindtap="changeCount" type="danger" data-step="{{-1}}">numA-1</van-button>
+<view></view>
+<mboxs></mboxs>

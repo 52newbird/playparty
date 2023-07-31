@@ -35,6 +35,13 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "mbox",
+                    "pathName": "pages/mbox/mbox",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

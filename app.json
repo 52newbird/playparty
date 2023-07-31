@@ -5,7 +5,31 @@
         "pages/my/my",
         "pages/test/test",
         "pages/cateye/cateeye",
-        "pages/tests/tests"
+        "pages/tests/tests",
+        "pages/mbox/mbox"
+    ],
+    "preloadRule": {
+        "pages/test/test": {
+            "network": "all",
+            "packages": [
+                "pkgA"
+            ]
+        }
+    },
+    "subpackages": [
+        {
+            "root": "pkgA",
+            "pages": [
+                "pages/cat/cat"
+            ]
+        },
+        {
+            "root": "pkgB",
+            "pages": [
+                "pages/dog/dog"
+            ],
+            "independent": true
+        }
     ],
     "window": {
         "navigationBarBackgroundColor": "#fff000",
@@ -13,6 +37,7 @@
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
+        "custom": true,
         "color": "#333",
         "selectedColor": "#FFC648",
         "backgroundColor": "#FFF",
@@ -21,20 +46,20 @@
             {
                 "pagePath": "pages/home/home",
                 "text": "首页",
-                "iconPath": "assets/首页1.png",
-                "selectedIconPath": "assets/首页2.png"
+                "iconPath": "/assets/首页1.png",
+                "selectedIconPath": "/assets/首页2.png"
             },
             {
                 "pagePath": "pages/card/card",
                 "text": "卡券",
-                "iconPath": "assets/卡券.png",
-                "selectedIconPath": "assets/卡券2.png"
+                "iconPath": "/assets/卡券.png",
+                "selectedIconPath": "/assets/卡券2.png"
             },
             {
                 "pagePath": "pages/my/my",
                 "text": "我的",
-                "iconPath": "assets/我的-1.png",
-                "selectedIconPath": "assets/我的-2.png"
+                "iconPath": "/assets/我的-1.png",
+                "selectedIconPath": "/assets/我的-2.png"
             }
         ]
     },
@@ -43,6 +68,8 @@
         "slots": "./component/slot/slot",
         "van-button": "@vant/weapp/button/index",
         "van-row": "@vant/weapp/row/index",
-        "van-col": "@vant/weapp/col/index"
+        "van-col": "@vant/weapp/col/index",
+        "van-tabbar": "@vant/weapp/tabbar/index",
+        "van-tabbar-item": "@vant/weapp/tabbar-item/index"
     }
 }

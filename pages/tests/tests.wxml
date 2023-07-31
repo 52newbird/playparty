@@ -6,3 +6,20 @@
 <view></view>
 <van-button type="primary" bindtap="getHtp">按钮</van-button>
 <van-button type="danger">按钮</van-button>
+<!-- 可拖动组件 -->
+<scroll-view class="toScroll" scroll-y>
+    <view>A1</view>
+    <view>A2</view>
+    <view>A3</view>
+</scroll-view>
+<view>
+    <text selectable>JLjlkajdfjlad</text>
+    <rich-text nodes="<h1 style='color:red'>我是自定义html转化文本</h1>"/>
+</view>
+<view>
+    <image src="../../assets/位图.png" mode="widthFix"/>
+</view>
+<block>
+    <view>1￥</view>
+    <view>1￥</view>
+</block>
